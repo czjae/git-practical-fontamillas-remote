@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- <style>
+        #parag1 {
+            color: red;
+        }
+    </style> -->
 </head>
 <body>
-    Hello
 
     <p id="parag1">This is my practical examination</p>
 
     <button id="btn1">Alert Me</button>
-    <button id="btn2">Change Color</button>
+    <button id="btn2" onclick="changecolor()">Change Color</button>
 
     <script>
-        var paragraph = document.getElementById("parag1");
-        var button1 = document.querySelector ("btn1");
-        var button2 = document.querySelector ("btn2");
+        let paragraph = document.getElementById("parag1");
+        let button1 = document.querySelector ("btn1");
+        let button2 = document.querySelector ("btn2");
+
+        btn1.addEventListener("click", function (){
+            alert("Button 1 triggered");
+        })
+
+        btn2.addEventListener("dblclick", function (){
+            paragraph.style.color = "red";            
+        })
+        
+
+        
     </script>
 </body>
 </html>
